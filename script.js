@@ -18,10 +18,8 @@ function TodoPost(e){
   var todo = document.getElementById("todoText").value;
   var list = document.getElementById("todoList");
 
-  if(todo != ""){
-    var currListHTML = list.innerHTML;
-    list.innerHTML = currListHTML + `<input type = "checkbox" name = "todo" / > ${todo} <br>`;
-  }
+  var currListHTML = list.innerHTML;
+  list.innerHTML = currListHTML + `<input type = "checkbox" name = "todo" / > ${todo} <br>`;
 }
 
 function TodoClear(e){
