@@ -18,10 +18,9 @@ function TodoPost(e){
   var todo = document.getElementById("todoText").value;
   var list = document.getElementById("todoList");
 
-  var currentListHTML = list.innerHTML;
   if(todo != ""){
     var currListHTML = list.innerHTML;
-    list.innerHTML = currListHTML + `<input type = "checkbox" name = "todo" / > ${todo} <br>`
+    list.innerHTML = currListHTML + `<input type = "checkbox" name = "todo" / > ${todo} <br>`;
   }
 }
 
